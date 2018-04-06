@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.volley_task.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btn_all_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="all"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_bg"/>
+        <Button
+            android:id="@+id/btn_incoming_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="incoming"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_bg1"/>
+        <Button
+            android:id="@+id/btn_out_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="outgoing"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_bg1"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ListView
+            android:id="@+id/lv_data1_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:dividerHeight="20dp"
+            android:visibility="visible"
+            android:divider="#FAFAFA"
+            android:scrollbars="none">
+
+        </ListView>
+        <ListView
+            android:id="@+id/lv_data2_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:divider="#FAFAFA"
+            android:dividerHeight="20dp"
+            android:background="#FAFAFA"
+            android:scrollbars="none">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_data_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:divider="#FAFAFA"
+            android:dividerHeight="20dp"
+            android:background="#FAFAFA"
+            android:scrollbars="none"
+            >
+
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
